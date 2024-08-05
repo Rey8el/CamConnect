@@ -1,0 +1,117 @@
+body{
+    background-color: #E7ECEF;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url("/static/images/bg.png");
+    background-color: #6096BA;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity */
+    z-index: 0;
+}
+
+#logo{
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    fill: #F4ACB7;
+}
+
+#form-container {
+    background-color: #274C77;
+    width: 25%;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+    padding: 3rem;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+/* Lobby Style */
+
+#Join-btn{
+    background-color: #A3CEF1;
+    color: #274C77;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+    border: 0px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,50%);
+    transition: background-color 100ms ease-in;
+}
+#Join-btn:hover{
+    background-color: #6096BA;
+    color: aliceblue;
+}
+
+
+
+.input-fields{
+    background-color: #b5d7f3;
+    border: 0px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/*Room Styles*/
+#video-screens{
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+    width: 80%;
+    margin: 0 auto;
+}
+.video-container{
+    flex-basis: 500px;
+    flex-grow: 1;
+    min-height: 40%;
+    max-height: 100%;
+    border: 1px solid rgb(53, 120, 66);
+    border-radius: 5px;
+    margin: 2px;
+    background-color: rgba(102, 104, 104, 0.751);
+}
+.video-player{
+    width: 100%;
+    height: 100%;
+}
+
+#control-wrapper{
+    display: flex;  
+    column-gap: 0.5em;
+    position: fixed;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+
+.control-icon{
+    width: 25px;
+    height: 25px;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06);
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius:5px ;
+}
+
+#leave-btn{
+    background-color: rgb(211, 37, 37);
+}
+
